@@ -1,0 +1,257 @@
+/*  el * sirve para añdir estilos a toda la pagina */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*  el . indica que los estilos se utilizan en clases */
+.fondo{
+    background-color: peru;
+}
+
+.hero{
+    background-image: linear-gradient(120deg, rgba(253, 0, 0, 0.5),rgba(70, 159, 218, 0.8)), url("0614f0c1b8ddfd2ba063eee38e31599d.jpg");
+    height: 1800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.texto-hero{
+    color: whitesmoke;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.texto80{
+    font-size: 60px;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    
+}
+
+.texto60{
+    font-size: 40px;
+    text-shadow: 0 0 0 10px rgb(231, 4, 4);
+}
+
+.texto50{
+    font-size: 50px;
+    text-shadow: 0 0 10px yellow;
+}
+
+/* Fin seccion hero */
+
+/*  Seccion Info */
+
+.info{
+    background-color: magenta;
+    color: mediumaquamarine;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.titulo-info{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px rgb(3, 2, 0);
+}
+
+
+/*  Fin Seccion Info */
+
+/* Seccin Cards */
+
+.contenedor-card{
+    display: flex;
+    width: 100%;
+    border-radius: 70%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    width: 25%;
+    text-align: center;
+    box-shadow: 0 0 5px 0 rebeccapurple;
+    border-radius: 10px;
+    background-color: brown;
+}
+
+.card:hover{
+    box-shadow: 0 0 10px 0 crimson;
+    transform: scale(1.1);
+    transition: transform 0.6s;
+    cursor: auto;
+}
+
+/* todas las etiquetas i dentro de la clase card obtienen estos estilos */
+
+.card i{
+    color: rgb(100, 250, 0);
+    font-size: 50px;
+    margin: 40px 0 20px 0;
+}
+
+.card h3{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.card p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    
+}
+
+.boton{
+    background: transparent;
+    background-color: rgb(0, 195, 255);
+    border: 1px solid rgb(134, 7, 219);
+    color: whitesmoke;
+    padding: 20px 10px;
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(208, 255, 0);
+
+}
+
+.margen-icon{
+    margin-top: 15px;
+}
+
+/* Fin Seccion Cards */
+
+/* Seccion galeria */
+
+.contenedor-imagen{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.contenedor-imagen img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 35px;
+    display: block;
+    box-shadow: 0 0 10px 0 black;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.galeria{
+    background-color: mediumpurple;
+}
+/* fin seccion galeria */
+
+/* Seccion contacto */
+
+.contacto{
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px hotpink;
+
+}
+
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.input{
+    background-color: transparent;
+    border: 0px;
+    color: whitesmoke;
+    outline: none;
+    border: 1px solid white;
+    text-shadow: 0 0 2px mediumseagreen;
+    width: 100%;
+    height: 25px;
+    font-size: 25px;
+}
+
+.input::placeholder{
+    color: blue;
+    font-family: fantasy;
+    font-weight: 900;
+}
+
+/* input[type="text
+    width: 49%;
+}
+*/
+.input-ancho{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+    height: 40px;
+}
+
+.textarea-ancho{
+    width: 99%;
+    margin-bottom: 15px;
+}
+/* Fin seccion contacto */
+
+
+.nav{
+    list-style-type: none;
+    background-color: mediumpurple;
+    width: 100%;
+    position: fixed;
+}
+
+.nav li{
+    float: left;
+
+}
+
+.nav li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 20px 16px;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav li a:hover{
+    background-color: indigo;
+    color: rgb(255, 255, 255);
+}
+
+.footer{
+    text-align: center;
+    background-color: rebeccapurple;
+    font-size: 20px;
+    text-shadow: 0 0 5px rgb(0, 248, 83);
+    color: whitesmoke;
+    padding: 15px 15px;
+
+}
